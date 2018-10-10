@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "start-storybook -p 9001 --config-dir ."
+    "start": "start-storybook -p 9001 --config-dir .",
+    "build": "build-storybook --config-dir .",
+    "test": "npx eyes-storybook"
   },
   "author": "",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@storybook/react": "^3.4.8",
+    "@storybook/react": "^3.4.11",
     "babel-core": "bridge",
     "babel-preset-jason": "^4.2.0",
     "chance": "^1.0.13",
@@ -39,5 +41,8 @@
     "rimraf": "^2.5.4",
     "webpack": "^3.0.0",
     "webpack-atoms": "^5.0.0"
+  },
+  "devDependencies": {
+    "@applitools/eyes.storybook": "^2.1.5"
   }
 }
